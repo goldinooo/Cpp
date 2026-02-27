@@ -1,9 +1,9 @@
-#ifndef HEADER_HPP
-#define HEADER_HPP
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
 
 #include <cstddef>
 #include <string>
-
+#include <iostream>
 
 typedef struct {
 	std::string first__name;
@@ -17,11 +17,7 @@ typedef struct {
 class Contact {
 	private:
 		ContactData contactinfo;
-
 	public:
-		Contact();
-		~Contact();
-	
 };
-
+std::string GetLineFromUser(std::string prompt);
 #endif // HEADER_HPP
