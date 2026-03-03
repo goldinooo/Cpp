@@ -36,10 +36,30 @@ void drawtable(ContactData *contacts, int total)
 	}
 	drawline();
 }
+void displayData(ContactData *contacts, int index)
+{
+	std::cout << contacts[index].first__name << std::endl;
+	std::cout << contacts[index].last__name << std::endl;
+	std::cout << contacts[index].nick__name << std::endl;
+	std::cout << contacts[index].phone__number << std::endl;
+	std::cout << contacts[index].darkest_secret << std::endl;
+}
 
-void onecontact(ContactData *contact)
+void oneContact(ContactData *contact, int total)
 {
 	std::string id;
-	id = GetLineFromUser("Please Choose An Index Of The Contact To Display :");
-	
+	id = GetLineFromUser("Please Choose An Index Of The Contact To Display :\t");
+	for(int i = 0; id[i]; i++)
+	{
+		if(!std::isdigit(id[i]))
+		{
+			std::cout << "ERROR";
+			return ;
+		}	
+	}
+	int d_Id = std::atoi(id.c_str());
+	if(d_Id > total || d_Id < 0)
+		return;
+	else
+		displayData(contact, d_Id);
 }

@@ -10,6 +10,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <sstream>
+#include <cctype>
 
 typedef struct {
 	std::string first__name;

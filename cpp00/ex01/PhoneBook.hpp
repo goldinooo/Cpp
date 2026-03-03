@@ -12,5 +12,7 @@ class PhoneBook
 };
 
 void drawtable(ContactData *contacts, int total);
+void oneContact(ContactData *contact, int total);
+void displayData(ContactData *contacts, int index);
 
 #endif

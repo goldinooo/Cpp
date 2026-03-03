@@ -24,6 +24,7 @@ int main()
 				total = 8;
 			std::system("clear");
 			drawtable(pb.contacts, total);
+			oneContact(pb.contacts, total);
 		}
 		else if (output == "EXIT")
 		{
