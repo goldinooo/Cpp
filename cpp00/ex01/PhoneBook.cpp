@@ -1,4 +1,5 @@
 #include "PhoneBook.hpp"
+#include "Contact.hpp"
 
 static std::string truncate(std::string s)
 {
@@ -34,4 +35,11 @@ void drawtable(ContactData *contacts, int total)
 		drawrow(index, contacts[i].first__name, contacts[i].last__name, contacts[i].nick__name);
 	}
 	drawline();
+}
+
+void onecontact(ContactData *contact)
+{
+	std::string id;
+	id = GetLineFromUser("Please Choose An Index Of The Contact To Display :");
+	
 }

@@ -1,9 +1,4 @@
 #include "Contact.hpp"
-#include <cctype>
-#include <cstddef>
-#include <cstdio>
-#include <cstdlib>
-#include <ostream>
 
 std::string GetLineFromUser(std::string prompt)
 {

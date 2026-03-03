@@ -34,6 +34,7 @@ int main()
 			std::cout << "bye bye" << std::endl;
 			sleep(1);
 			std::system("clear");
+			return 0;
 		}
 	}
 	return 0;
