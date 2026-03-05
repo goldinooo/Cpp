@@ -25,9 +25,9 @@ class Contact {
 	private:
 		ContactData contactinfo;
 	public:
+		ContactData addcontact(ContactData contact);
 };
 std::string GetLineFromUser(std::string prompt);
-ContactData addcontact(ContactData contact);
 bool checkinput(std::string s);
 
 #endif // HEADER_HPP

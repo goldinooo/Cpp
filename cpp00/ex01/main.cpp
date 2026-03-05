@@ -12,7 +12,7 @@ int main()
 		if (output == "ADD")
 		{
 			std::system("clear");
-			pb.contacts[id % 8] = addcontact(pb.contacts[id % 8]);
+			pb.contacts[id % 8] = pb.addcontact(pb.contacts[id % 8]);
 			id += 1;
 		}
 		if(output == "SEARCH")

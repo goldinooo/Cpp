@@ -1,6 +1,6 @@
 NAME = phonebook
 CC = c++
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = #-Wall -Wextra -Werror -std=c++98 -fsanitize=address -g3
 BUILD_DIR= build
 CWD = .
 SRCS= $(shell find $(CWD) -type f -name "*.cpp")

@@ -1,15 +1,14 @@
 #include "Contact.hpp"
 
-static std::string trim(std::string data) // this is wrong
+static std::string trimspace(std::string data) // this is wrong
 {
-	std::string newstr = data;
-	int i = 0;
-	while(newstr.at(i))
-	{
-		if(std::isspace(newstr.at(i)))
-			i++;
-	}
-	return newstr;
+	int start = 0;
+	int end = data.size();
+	while (start < end && std::isspace(data.at(start)))
+		start++;
+	while (end > 0 && std::isspace(data.at(end - 1)))
+		end--;
+	return data.substr(start, end - start);
 }
 
 std::string GetLineFromUser(std::string prompt)
@@ -17,7 +16,7 @@ std::string GetLineFromUser(std::string prompt)
 	std::cout << prompt;
 	std::string data;
 	std::getline(std::cin, data);
-	return trim(data);
+	return trimspace(data);
 }
 
 bool checkinput(std::string s)
