@@ -1,8 +1,9 @@
 #pragma once
 
-#include <stdlib.h> // rand()
+#include <cstdlib> // rand()
 #include <string>
 #include "AForm.hpp"
+#include <iostream>
 
 class RobotomyRequestForm : public AForm
 {

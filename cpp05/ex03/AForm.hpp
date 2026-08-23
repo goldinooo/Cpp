@@ -20,7 +20,7 @@ class AForm {
 		AForm(const std::string name, const int sign_grade, const int exec_grade);
 		AForm(const AForm& oth);
 		AForm &operator=(const AForm& oth);
-		~AForm();
+		virtual ~AForm();
 
 		//functions
 		void beSigned(Bureaucrat& bureaucrat);

@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
+    std::cout << "\033[33m" << std::endl << "Test ex00" << "\033[0m" << std::endl;
 
     std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
     try

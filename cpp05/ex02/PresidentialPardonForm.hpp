@@ -2,6 +2,7 @@
 
 #include "AForm.hpp"
 #include <string>
+#include <iostream>
 
 class PresidentialPardonForm : public AForm {
 	private:
