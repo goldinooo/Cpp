@@ -1,0 +1,6 @@
+in cpp we have 4 important casting operators:
+
+~static_cast~ for normal type conversions
+~reinterpret_cast~ it treat memory / address as another type
+~dynamic_cast~ find the real type in an inheritance hierarchy
+~const_cast~ add or remove cast
